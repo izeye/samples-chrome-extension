@@ -10,6 +10,12 @@
     "default_popup": "popup.html",
     "default_title": "Click here!"
   },
+  "content_scripts": [
+    {
+      "matches": ["https://www.facebook.com/*"],
+      "js": ["libs/jquery-2.2.0.min.js", "test.js"]
+    }
+  ],
   "permissions": [
     "activeTab",
     "https://spring.io/"
